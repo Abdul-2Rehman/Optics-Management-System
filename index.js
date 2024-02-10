@@ -82,6 +82,10 @@ app.use("/api/v1/items", itemsRouter);
 app.use("/api/v1/ownerAccounts", ownerAccountRouter);
 app.use("/api/v1/venders", venderRouter);
 
+app.get("/", (req, res) => {
+  res.send("Optics-Management-System Api Successfully Worked");
+});
+
 // Api Error Handling:
 app.all("*", (req, res, next) => {
   next(new ApiError(`Can't find ${req.originalUrl} on this server!`, 404));
