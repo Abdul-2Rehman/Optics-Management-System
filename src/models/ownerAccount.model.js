@@ -12,12 +12,6 @@ const accountSchema = new Schema(
     accountNumber: {
       type: String,
       required: [true, "Number is required"],
-      validate: {
-        validator: (value) => validator.isNumeric(value),
-        message: "Number must be numeric",
-      },
-      minlength: [10, "Number must be at least 10 characters"],
-      maxlength: [20, "Number cannot be more than 20 characters"],
     },
   },
   {

@@ -71,13 +71,11 @@ const customerSchema = new Schema(
     contact1: {
       type: String,
       trim: true,
-      validate: contactNumberValidator,
       required: [true, "Contact 1 is required"],
     },
     contact2: {
       type: String,
       trim: true,
-      validate: contactNumberValidator,
     },
     address: {
       type: String,
