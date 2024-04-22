@@ -24,7 +24,7 @@ export const app = express();
 
 // 1) Enable Cross-Origin Resource Sharing (CORS) for specified origin, methods, and credentials
 const corsOptions = {
-  origin: ["https://optics-management-system.netlify.app", "http://localhost:5173"},
+  origin: ["https://optics-management-system.netlify.app", "http://localhost:5173"],
   methods: "GET, HEAD, PUT, PATCH, POST, DELETE",
   credentials: true,
 };
